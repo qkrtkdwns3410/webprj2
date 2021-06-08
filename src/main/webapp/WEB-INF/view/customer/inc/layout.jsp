@@ -22,7 +22,7 @@
 
 <body>
 <!-- header 부분 -->
-<tiles:insertAttribute name="header" />
+<tiles:insertAttribute name="header"/>
 
 <!-- --------------------------- <visual> --------------------------------------- -->
 <!-- visual 부분 -->
@@ -35,12 +35,12 @@
         <!-- --------------------------- aside --------------------------------------- -->
         <!-- aside 부분 -->
         <tiles:insertAttribute name="aside"/>
-    
-    
+        
+        
         <!-- --------------------------- main --------------------------------------- -->
-    
+        
         <tiles:insertAttribute name="body"/>
-
+    
     </div>
 </div>
 
