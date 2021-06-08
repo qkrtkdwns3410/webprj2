@@ -5,9 +5,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title><tiles:getAsString name="title"/></title>
+    <title><tiles:getAsString name="title" ignore="true"/></title>
     
-    <link href="/css/customer/layout.css" type="text/css" rel="stylesheet"/>
+    <link href="/css/customer/layout.jsp" type="text/css" rel="stylesheet"/>
     <style>
 
         #visual .content-container {
@@ -22,11 +22,11 @@
 
 <body>
 <!-- header 부분 -->
-<tiles:insertAttribute name="header"/>
+<tiles:insertAttribute name="header" ignore="true"/>
 
 <!-- --------------------------- <visual> --------------------------------------- -->
 <!-- visual 부분 -->
-<tiles:insertAttribute name="visual"/>
+<tiles:insertAttribute name="visual"  ignore="true"/>
 
 <!-- --------------------------- <body> --------------------------------------- -->
 <div id="body">
@@ -34,18 +34,17 @@
         
         <!-- --------------------------- aside --------------------------------------- -->
         <!-- aside 부분 -->
-        <tiles:insertAttribute name="aside"/>
+        <tiles:insertAttribute name="aside"  ignore="true"/>
         
         
         <!-- --------------------------- main --------------------------------------- -->
-        
-        <tiles:insertAttribute name="body"/>
+        <tiles:insertAttribute name="body"  ignore="true"/>
     
     </div>
 </div>
 
 <!-- ------------------- <footer> --------------------------------------- -->
-<tiles:insertAttribute name="footer"/>
+<tiles:insertAttribute name="footer"  ignore="true"/>
 
 
 </body>

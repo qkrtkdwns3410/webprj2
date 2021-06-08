@@ -23,6 +23,6 @@
         <property name="order" value="2"/>
     </bean>
     
-    <mvc:resources mapping="/**" location="/static/"></mvc:resources>
-    
+    <mvc:resources mapping="/**" location="/static/"/>
+
 </beans>
