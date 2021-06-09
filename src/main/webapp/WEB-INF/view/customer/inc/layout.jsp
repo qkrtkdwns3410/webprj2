@@ -1,11 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title><tiles:getAsString name="title" ignore="true"/></title>
+    <title>공지사항</title>
     
     <link href="/css/customer/layout.jsp" type="text/css" rel="stylesheet"/>
     <style>
@@ -29,7 +29,7 @@
 <tiles:insertAttribute name="visual"  ignore="true"/>
 
 <!-- --------------------------- <body> --------------------------------------- -->
-<div id="body">
+<div id="container">
     <div class="content-container clearfix">
         
         <!-- --------------------------- aside --------------------------------------- -->
