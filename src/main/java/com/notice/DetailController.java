@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 public class DetailController implements Controller {
     
     @Override
-    public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
     
         ModelAndView mv = new ModelAndView("notice.detail");
     

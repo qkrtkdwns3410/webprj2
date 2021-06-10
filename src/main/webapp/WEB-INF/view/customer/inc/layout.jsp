@@ -1,11 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="t" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>공지사항</title>
+    <title><t:getAsString name="title"/></title>
     
     <link href="/css/customer/layout.jsp" type="text/css" rel="stylesheet"/>
     <style>
@@ -22,29 +23,29 @@
 
 <body>
 <!-- header 부분 -->
-<tiles:insertAttribute name="header" ignore="true"/>
+    <t:insertAttribute name="header"/>
 
 <!-- --------------------------- <visual> --------------------------------------- -->
 <!-- visual 부분 -->
-<tiles:insertAttribute name="visual"  ignore="true"/>
+    <t:insertAttribute name="visual"/>
 
 <!-- --------------------------- <body> --------------------------------------- -->
-<div id="container">
-    <div class="content-container clearfix">
+    <div id="body">
+        <div class="content-container clearfix">
         
         <!-- --------------------------- aside --------------------------------------- -->
         <!-- aside 부분 -->
-        <tiles:insertAttribute name="aside"  ignore="true"/>
+            <t:insertAttribute name="aside"/>
         
         
         <!-- --------------------------- main --------------------------------------- -->
-        <tiles:insertAttribute name="body"  ignore="true"/>
+            <t:insertAttribute name="body"/>
     
-    </div>
+        </div>
 </div>
 
 <!-- ------------------- <footer> --------------------------------------- -->
-<tiles:insertAttribute name="footer"  ignore="true"/>
+    <t:insertAttribute name="footer"/>
 
 
 </body>
